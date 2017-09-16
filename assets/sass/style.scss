@@ -8,6 +8,10 @@ body {
 	background-color: white;
 }
 
+$primary_color: #ffb400;
+$p_color: #727272;
+$font_family: 'Open Sans', sans-serif;
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
@@ -177,8 +181,8 @@ input {
         background: #ffb400;
         transition: all 0.5s ease;
     
-        &:active {
-    	right: 0;
+        &.active {
+    	     right: 0;
         }
 
         i.fa-user {
@@ -371,6 +375,7 @@ input {
             }
 
         }
+
         &.section-7 {
         	.container {
                      margin-right: auto;
@@ -640,7 +645,8 @@ input {
 	text-align: center;
 	padding: 0;
 	width: 100%;
-	#one {
+  
+	#one, #two {
       background: url('../images/carousel-image-3.jpg') no-repeat center top fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size:cover;background-size:cover;
       height: 300px;
       width: 100%;
