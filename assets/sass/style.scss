@@ -396,14 +396,64 @@ figure {
 
 		&.section-7 {
 			.container {
-					 margin-right: auto;
-					 margin-left: auto;
-					 padding-left: 15px;
-					 padding-right: 15px;
-					 width: 100%;
-					 max-width: 1200px;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    @media (min-width: 976px) {
+                        flex-flow: row nowrap;
+                    }
+                .copyright {
+                    @media (max-width: 976px) {
+                        font-size: 13px;
+                        padding-bottom: 30px;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .moduletable {
+                    @media (max-width: 976px) {
+                            font-size: 13px;
+                            display: block;
+                            text-align: center;
+                            width: 100%;
 
+                    }
+                }
 
+                .module_container {
+                        @media (max-width: 976px) {
+                                display: block;
+                                text-align: left;
+                        }
+                }
+                .iteam {
+                        margin-bottom: 60px;
+                        @media (max-width: 976px) {
+                                        width: 100%;
+                                        text-align: left;
+                        }
+                }
+                .blurb {
+                    width: 250px;
+                    @media (max-width: 976px) {
+                                        justify-content: left;
+                                        text-align: left;
+                                        margin: 0 auto;
+                                        max-width: 260px;
+                                        padding: 5px;
+                    }
+                }
+                .blurb2 {
+                    @media (max-width: 976px) {
+                             justify-content: center;
+                                        text-align: center;
+                                        margin: 0 auto;
+                                        max-width: 160px;
+                                        padding: 5px;
+                    
+
+                    }
+                }
 			   .terms_link {
 					color: #727272;
 					cursor: pointer;
@@ -442,6 +492,9 @@ figure {
 							margin: 0 10px;
 
 					}
+                    .module_container .blurb2 .blurb-icon {
+                        text-align: center;
+                    }
 					.module_container .blurb span {
 						font-size: 45px;
 						display: flex;
@@ -449,6 +502,7 @@ figure {
 					}
 					.module_container .phone-1 a {
 						color: #727272;
+                        text-align: left;
 					}
 					.module_container .phone-1 a:hover {
 						color: #000;
@@ -461,7 +515,7 @@ figure {
 						line-height: 20px;
 						width: 20px;
 						list-style: none;
-						margin-left: -50px;
+						margin-left: 0px;
 					 }
 					 .moduletable li span {
 						font-size: 20px;
@@ -484,29 +538,26 @@ figure {
 
 
 			.container {
-
-
-					.page_header h2 {
+					h2 {
 							font-size: 25px;
 							text-transform: uppercase;
 							color: rgb(77, 83, 113);
-					  text-align:center;
+					        text-align: center;
+					}
+				    .galery-menu .row {
+					   display: block;
+					    margin: 0 auto;
+				    }
 
-					 }
-				 .galery-menu .row {
-					 display: block;
-					  margin: 0 auto;
-				 }
+				    .thumbs {
+        					overflow: hidden;
+        					margin-bottom: 30px;
+        					position: relative;
+        					border-radius: 3px;
+        					cursor: pointer;
+        					box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
-				.thumbs {
-					overflow: hidden;
-					margin-bottom: 30px;
-					position: relative;
-					border-radius: 3px;
-					cursor: pointer;
-					box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-
-					display: block;
+        					display: block;
 
 					img {
 						 display: block;
