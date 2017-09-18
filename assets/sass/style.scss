@@ -308,12 +308,21 @@ figure {
 			   text-align: center;
 			}
 			.row-2 {
-			   text-align: center;
+			    text-align: center;
+                @media (max-width: 996px) {
+                   display: block;
+                   margin: 30px;
+               }
 
 			}
 			.row-2 ul {
+                display: flex;
+                flex-flow: row;
 				padding: 0;
-
+                @media (max-width: 996px) {
+                   display: inline-block;
+                   margin: 30px;
+               }
 			}
 
 			.row-2 {
@@ -329,6 +338,10 @@ figure {
 			.row-2 img {
 				opacity: 1;
 				transition: all 0.5s ease;
+                @media (max-width: 996px) {
+                    margin: 10px;
+               }
+
 			}
 			.row-2 img:hover {
 				opacity: 0.7;
@@ -434,7 +447,7 @@ figure {
                         }
                 }
                 .blurb {
-                    width: 250px;
+                    width: 100%;
                     @media (max-width: 976px) {
                                         justify-content: left;
                                         text-align: left;
@@ -559,29 +572,29 @@ figure {
 
         					display: block;
 
-					img {
+					    img {
 						 display: block;
 						 width: 100%; /* ширина картинки */
 						 height: auto; /* высота картинки */
 						 backface-visibility: hidden;
-					}
+					    }
 
-					.caption {
-						 width: 100%;
-						height: 100%;
-						 color: #fff;
-						 position: absolute;
-						 top: 0;
-						 left: 0;
-						 z-index: 3;
+					    .caption {
+						   width: 100%;
+						   height: 100%;
+						   color: #fff;
+						   position: absolute;
+						   top: 0;
+						    left: 0;
+						      z-index: 3;
 
-						display: flex;
-						justify-content: center;
-						align-items: center;
-					}
-				}
+						  display: flex;
+						  justify-content: center;
+						  align-items: center;
+					    }
+				    }   
 
-				.thumbs:before {
+				    .thumbs:before {
 					content: '';
 					background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
 					width: 100%;
@@ -593,9 +606,9 @@ figure {
 					z-index: 2;
 					transition-property: top, opacity;
 					transition-duration: 0.3s;
-				}
+				    }
 
-				.thumbs .caption span {
+				    .thumbs .caption span {
 					 display: block;
 					 opacity: 0;
 					 position: relative;
@@ -603,43 +616,103 @@ figure {
 					 transition-property: top, opacity;
 					 transition-duration: 0.3s;
 					 transition-delay: 0s;
-				  }
-				  .thumbs .caption .title {
+				     }
+				    .thumbs .caption .title {
 					 line-height: 1;
 					 font-weight: normal;
 					 font-size: 18px;
-				  }
+				     }
 
-				  .thumbs:focus:before,
-				  .thumbs:focus span, .thumbs:hover:before,
-				  .thumbs:hover span {
+				     .thumbs:focus:before,
+				    .thumbs:focus span, .thumbs:hover:before,
+				    .thumbs:hover span {
 					   opacity: 1;
-				  }
-				  .thumbs:focus:before, .thumbs:hover:before {
+				     }
+				    .thumbs:focus:before, .thumbs:hover:before {
 					   top: 50%;
-				  }
-				  .thumbs:focus span, .thumbs:hover span {
+				     }
+				    .thumbs:focus span, .thumbs:hover span {
 					   top: 0;
-				  }
-				  .thumbs:focus .title, .thumbs:hover .title {
+				     }
+				    .thumbs:focus .title, .thumbs:hover .title {
 					  transition-delay: 0.15s;
-}
-
-
+                    }
 			}
+        }
+        &.section-blog{
+                border-bottom: 5px solid #ffb400;
+                padding-bottom: 0;
+            h2 {
+               text-transform: uppercase;
+            }
+            .row {
+                margin-bottom: 30px;
+            }
+            a {
+                color: #727272;
+                text-decoration: none;
+            }
+            span {
+                color: #ffb400;
+            }
+            .iteam column-1 {
+                margin-bottom: 30px;
+            }
+            .col-sm-6 {
+                @media (max-width: 976px) {
+                    display: block;
+                    margin-bottom: 60px;
+                }
+            }
+            .iteam_header h3 {
+                color: #ffb400;
+            }
+            .iteam_info {
+                font-size: 13px;
+                dd {
+                    display: inline-block;
+                    padding: 0 5px 5px 0;
+                    margin: 0;
+                }
+                .label-info2:hover {
+                    color: #ffb400;
+                }
+                .item_createdby {
+                        margin: 0;
+                }
+            }
+            .tags {
+                padding-left: 5px;
+            }
+            .tags li {
+                display: inline-block;
+                margin: 0 30px 30px 0;
+                background: #ffb400;
+                border-radius: 5px;
+                .label-info {
+                        font-size: 100%;
+                        line-height: 12px;
+                        font-weight: normal;
+                        color: rgb(255, 255, 255);
+                        padding: 3px 5px;
+               }
+               .label-info:hover {
+                background: #000;
+                border-radius: 5px;
+               }
+            }
+            .tags2 {
+                padding-left: 0;
+            }
+            .button-primary {
+                color: rgb(255, 255, 255);
+            }
+            .button-primary:hover {
+                background: #000;
+            }
 
-
-
-
-
-
- }
-
-
-}
-
-
-
+        }
+    }
 }
 .section-invert {
 			 background-color: $primary_color;
