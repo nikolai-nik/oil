@@ -3,10 +3,9 @@
 
 	$( document ).ready( function () {
 
-		$( '#fixed-menu-right' ).on('click', '.navigation-right', function( event ) {
+		$( '#fixed-menu-right' ).on('click', '.toggle-button', function( event ) {
 			var $target = $( event.currentTarget ),
 				$parent = $target.parent( '.navigation-right' );
-
 
 			$parent.toggleClass( 'active' );
 		});
