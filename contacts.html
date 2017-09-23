@@ -33,7 +33,7 @@
 								<li><a href="index.html">home</a></li>
 								<li><a href="about.html">about</a></li>
 								<li><a href="#" class="down">Pages</a>
-								   	<ul class="submenu">
+								    <ul class="submenu">
 									  	<li>
 											<a href="prising.html">Prising</a>
 									  	</li>
@@ -55,11 +55,13 @@
 
 							</ul>
 						</nav>
+
 					</div>
 				</div>
 
 
 			</header>
+			
 			<div id="fixed-menu-right">
 					<div class="navigation-right">
 						<i class="fa fa-user toggle-button">
@@ -118,82 +120,115 @@
 					</div>
 			</div>
 			<main class="site-content">
-
-				<section class="section section-galery-1">
+				<section class="section section-contacts col-sm-12">
 					<div class="container">
-						<h2>galery</h2>
 						<div class="row">
-							<div class="col-12 col-sm-6 col-md-4">
-								<div class="thumbs">
-									<a href="#">
-										<img src="assets/images/carousel-image-1.jpg">
-									</a>
-									<div class="caption">
-										<span class="title">Galery-1</span>
-									</div>
+						    <style>
+						       #map {
+						        height: 400px;
+						        width: 100%;
+						        background-color: grey;
+						       }
+						    </style>
+						    <h2>CONTACTS</h2>
+						    <div id="map"></div>
+						    <script>
+						      function initMap() {
+						        var uluru = {lat: 46.964730, lng: 32.017769};
+						        var map = new google.maps.Map(document.getElementById('map'), {
+						          zoom: 16,
+						          center: uluru
+						        });
+						        var marker = new google.maps.Marker({
+						          position: uluru,
+						          map: map
+						        });
+						      }
+						    </script>
+						    <script async defer
+						    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Xj3n5ox_1vdblahyrUtiEEIx8J5gOpk&callback=initMap">
+						    </script>
+						    <div class="content_inner col-sm-12">
+						    	<div class="row">
+								    <div class="contacts_details col-sm-4">
+								    	<h3 class="heading-style">
+								    		<span>Address:</span>
+								    	</h3>
+								    	<div class="contact_adress">
+								    		<i class="fa fa-home"></i>
+												138 Atlantis Ln Kingsport Illinois 121164
+											
+								    	</div>
+								    	<h3 class="heading-style">
+								    		<span>Phones:</span>
+								    	</h3>
+								    	<div class="contact_details_telephone">
+								    		<i class="fa fa-phone">
+												800-2345-6789
+											</i>
+								    	</div>
+								    	<div class="contact_details_fax">
+								    		<i class="fa fa-phone">
+												800-2345-6789
+											</i>
+								    	</div>
+								    	<h3 class="heading-style">
+								    		<span>E-mail:</span>
+								    	</h3>
+								    	<div class="contact_details_email">
+								    		<i class="fa fa-envelope"></i>
+								    		<a href="mailto:info@demolink.org">info@demolink.org</a>
+								    	</div>
+								    	<div class="contact_vcard">
+		    								Download information as:  
+		    								<a href="#"> vCard</a>  	
+								    	</div>
+								    </div>
+								    <div class="col-sm-8">
+								    	<div class="contacts_misc">
+								    		<h3 class="heading-style">
+												<span class="item_title_part_0">Miscellaneous</span>
+												<span class="item_title_part_1">information:</span>
+											</h3>
+											<p>Email us with any questions or inquiries or use our contact data.</p>
+								    	</div>
+								    	<div class="contact">
+								    		<div class="row">
+									    		<div class="control control-group-input col-sm-4">
+									    			<div class="control">
+									    				<input type="text" placeholder="Name" name="name" id="name_0" class="mod_tm_ajax_contact_form_text hasTooltip" required="" title="" aria-required="true" data-original-title="Name">
+									    			</div>
+												</div>
+												<div class="control control-group-input col-sm-4">
+													<div class="control">
+														<input type="email" placeholder="Email" name="email" id="email_1" class="mod_tm_ajax_contact_form_email hasTooltip" required="" title="" aria-required="true" data-original-title="Email">
+													</div>
+												</div>
+												<div class="control control-group-input col-sm-4">
+													<div class="control">
+														<input type="text" placeholder="Phone" name="phone" id="phone_2" class="mod_tm_ajax_contact_form_text hasTooltip" title="" data-original-title="Phone">
+													</div>
+												</div>
+												<div class="control control-group-input col-sm-12">
+													<div class="control">
+														<textarea name="message" placeholder="Message" id="message_3_115" class="mod_tm_ajax_contact_form_textarea hasTooltip" required="" title="" data-autosize-on="true" style="overflow: hidden; word-wrap: break-word; height: 124px;" aria-required="true" data-original-title="Message"></textarea>
+													</div>
+												</div>
+												<div class="control control-group-button col-sm-12">
+													<div class="control">
+														<a href="#" class="button-primary">Send</a>
+														<a href="#" class="button-primary">Clear</a>
+								
+													</div>
+												</div>
+											</div>
+								    	</div>
+								    </div>
 								</div>
 							</div>
-
-							<div class="col-12 col-sm-6 col-md-4">
-								<div class="thumbs">
-									<a href="#">
-										<img src="assets/images/carousel-image-1.jpg">
-									</a>
-									<div class="caption">
-										<span class="title">Galery-1</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-12 col-sm-6 col-md-4">
-								<div class="thumbs">
-									<a href="#">
-										<img src="assets/images/carousel-image-1.jpg">
-									</a>
-									<div class="caption">
-										<span class="title">Galery-1</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-12 col-sm-6 col-md-4">
-								<div class="thumbs">
-									<a href="#">
-										<img src="assets/images/carousel-image-1.jpg">
-									</a>
-									<div class="caption">
-										<span class="title">Galery-1</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-12 col-sm-6 col-md-4">
-								<div class="thumbs">
-									<a href="#">
-										<img src="assets/images/carousel-image-1.jpg">
-									</a>
-									<div class="caption">
-										<span class="title">Galery-1</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-12 col-sm-6 col-md-4">
-								<div class="thumbs">
-									<a href="#">
-										<img src="assets/images/carousel-image-1.jpg">
-									</a>
-									<div class="caption">
-										<span class="title">Galery-1</span>
-									</div>
-								</div>
-							</div>
-
 						</div>
 					</div>
-				</section>
-
-
+                </section>                  
 				<section class="section section-7">
 			    	<div class="container">
 						<div class="row">
@@ -262,8 +297,6 @@
 						</div>
 					</div>
 				</section>
-			</section>
-
 			</main>
 
 			<footer class="site-footer"></footer>
