@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">"
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<!-- Link Swiper's CSS -->
 		<link rel="stylesheet" href="assets/css/swiper.min.css">
 
@@ -266,8 +266,28 @@
 
 			</main>
 
-			<footer class="site-footer"></footer>
+			<footer class="site-footer">
+				<a href="#" class="scrollup">Наверх</a>
+			</footer>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			 
+			$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+			} else {
+			$('.scrollup').fadeOut();
+			}
+			});
+			 
+			$('.scrollup').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+			});
+			 
+			});
+		</script>
 
 		 <!-- Initialize Swiper -->
 		<script>

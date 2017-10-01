@@ -600,7 +600,10 @@ figure img {
         height: auto;
         /* высота картинки */
         -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; }
+        backface-visibility: hidden;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease; }
       .site-content .section.section-galery-1 .container .thumbs .caption {
         width: 100%;
         height: 100%;
@@ -689,7 +692,12 @@ figure img {
         display: block;
         margin-bottom: 60px; } }
     .site-content .section.section-blog .iteam_header h3 {
-      color: #ffb400; }
+      color: #ffb400;
+      -webkit-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease; }
+    .site-content .section.section-blog .iteam_header h3:hover {
+      color: #727272; }
     .site-content .section.section-blog .iteam_info {
       font-size: 13px; }
       .site-content .section.section-blog .iteam_info dd {
@@ -712,7 +720,10 @@ figure img {
         line-height: 12px;
         font-weight: normal;
         color: white;
-        padding: 3px 5px; }
+        padding: 3px 5px;
+        -webkit-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        transition: all 0.8s ease; }
       .site-content .section.section-blog .tags li .label-info:hover {
         background: #000;
         border-radius: 5px; }
@@ -1201,3 +1212,14 @@ figure img {
       color: white; }
   .post-carousel .swiper-slide:hover .slide-content {
     background-color: rgba(250, 185, 21, 0.8); }
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: none;
+  text-indent: -9999px;
+  background: url("http://webmastermix.ru/files/demo/creation-site/raznoe/knopka-vverh/icon_top.png") no-repeat; }
